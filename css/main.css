@@ -477,11 +477,7 @@ margin: 0;
   align-items: flex-start;
 }
 
-  @media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
-
-  }
-
+ 
 /* ----- Tablet Styles - FAQ Page ----- */
 
 .faq .content-wrapper {
@@ -495,6 +491,39 @@ margin: 0;
 .faq h2 {
   width: 100%;
 }
+
+
+ @media only screen and (min-width: 1200px) {
+    /*----- Desktop Styles - Home Page -----*/
+
+.content-wrapper{
+  max-width: 960px;
+
+ 
+}
+
+.features h2 {
+  width: 90%;
+}
+
+
+.features article {
+ flex-basis: 33%;
+ 
+  }
+
+
+
+.features article p {
+  width: 50%;
+  text-align: center;
+
+}
+
+
+
+  }
+
 
 /* ==========================================================================
    Print styles.
