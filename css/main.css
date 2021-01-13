@@ -139,11 +139,16 @@ header nav ul {
 }
 
 header nav ul li {
+  list-style: none;
 
 }
 
 header nav ul li a {
 
+}
+
+footer {
+  flex-flow: column;
 }
 
 footer .content-wrapper {
@@ -155,8 +160,8 @@ footer .content-wrapper {
 
   }
 
-  footer .contact {
-    margin-bottom: 50px;
+footer .contact {
+  margin-bottom: 50px;
   }
 
 footer .social-icons {
@@ -210,7 +215,7 @@ aside {
 }
 
 .features h2 {
-margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .features .feature-items {
@@ -282,34 +287,9 @@ margin-bottom: 60px;
   flex-flow: row wrap;
 }
 
-mission-content {
-
-}
-
-map {
-
-}
-
-map figure {
-
-}
 
 
-general-info p {
 
-}
-
-general-info address {
-
-}
-
-.chat p {
-
-}
-
-.chat address {
-
-}
 
 /* ==========================================================================
    Helper classes
@@ -398,16 +378,122 @@ general-info address {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+  @media only screen and (min-width: 768px) {
+    /* ----- Tablet Styles - Home Page -----*/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   
+ .content-wrapper{
+  max-width: 640px;
+  margin: 100px 0;
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+header {
+  justify-content: space-around;
+  padding: 33px 0;
+  
+}
+
+header .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+header nav {
+  width: 20%;
+
+}
+
+header nav ul {
+justify-content: space-between;
+}
+
+.header-divider {
+  display: none;
+}
+
+/* Hero Area - Aside */
+
+aside .content-wrapper {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+padding: 50px 0;
+margin: ;
+
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+width: 40%;
+margin: 0;
+}
+
+.features article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+  }
+
+.reviews article {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.footer-content {
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  }
+
+  .faq-content {
+    flex-basis: 50%;
+  }
+
+/* -------- Tablet Styles - About Page -------- */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mission-content p {
+  width: 50%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 90%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+  @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+
+  }
+
+/* ----- Tablet Styles - FAQ Page ----- */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
 }
 
 /* ==========================================================================
