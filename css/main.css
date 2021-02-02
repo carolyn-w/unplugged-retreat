@@ -114,21 +114,21 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
-  font-weight: normal;
+  font-weight: 400;
 
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-  font-weight: normal;
+  font-weight: 400;
   margin: 20px 0;
 }
 
@@ -193,12 +193,14 @@ header nav {
   width: 60%;
   padding-right: 30px;
 
+
 }
 
 header nav ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0;
 
 }
 
@@ -216,7 +218,7 @@ footer .content-wrapper {
 footer .contact {
   margin-bottom: 50px 0;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
 
   }
 
@@ -310,7 +312,6 @@ aside {
   display: flex;
   align-items: center;
   flex-flow: column;
- 
 
 }
 
@@ -319,11 +320,7 @@ aside {
   text-align: center;
   padding-top: 20px;
   
-  
 }
-
-
-
 
 
 /* Reviews */
@@ -362,14 +359,40 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row-wrap;
+  padding: 20px 0;
 }
+
+.faq h2 {
+  line-height: 30px;
+
+}
+
+.faq h4 {
+  margin: 0;
+  line-height: 24px;
+}
+
+.faq p {
+ line-height: 18px;
+ margin: 0;
+ padding-top: 10px;
+}
+
+
+.faq-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  padding: 20px 0;
+  
+}
+
+
 
 
 /* --------- Mobile Styles - About Page --------- */
@@ -379,6 +402,31 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding: 30px 0;
+
+
+}
+
+.mission h2 {
+   line-height: 40px;
+   margin: 0;
+
+}
+
+.mission p {
+  line-height: 18px;
+
+}
+
+
+.map {  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+
+  
 }
 
 .contact-section {
@@ -386,9 +434,19 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
+  background-color: #2a423a;
+  padding: 30px 0;
+ }
 
+ .contact-section h2, h3, p {
+  margin: 0;
+ }
 
+ .contact-content  {
+  padding: 20px 0;
+ }
+
+ 
 
 
 
@@ -581,6 +639,7 @@ margin: 0;
 
   }
 
+
   .faq-content {
     flex-basis: 50%;
   }
@@ -612,7 +671,10 @@ margin: 0;
 
 .faq .content-wrapper {
   justify-content: space-between;
+
 }
+
+
 
 .faq-content {
   flex-basis: 40%;
