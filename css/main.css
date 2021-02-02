@@ -96,11 +96,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #e2e3ed;
+  text-align: left;
+
 }
 
 ul,
 ol {
   list-style: none;
+  text-decoration: none;
 }
 
 a {
@@ -111,52 +114,46 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: normal;
+
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.9em;
+  font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: normal;
+  margin: 20px 0;
 }
 
 p {
-  font-size: 1.125em;
-  line-height: 23px;
-
-}
-
-img {
-
-}
-
-figure {
+  font-size: .875em;
+  line-height: 1.285;
 
 }
 
 address {
-font-style: italic;
-}
-
-
-.content-wrapper {
-
+font-style: normal;
 }
 
 
 .content-wrapper{
   width: 90%;
-  margin: 30px 0 50px 0;
+
+  
 }
 
 /*-----------Base Header - Footer Styles ----------*/
 
 header,
 footer {
+  background: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +162,6 @@ footer {
 
 header {
   padding: 15px 0;
-  background: #202322;
 }
 
 header .content-wrapper {
@@ -177,58 +173,71 @@ header .content-wrapper {
 
 }
 
-
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
-  color: #3a3a3a;
-
+  background: #3a3a3a;
+  margin: 10px 0;
 
 }
+
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: 400;
+  text-transform: uppercase;
   width: 60%;
+  padding-right: 30px;
 
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 
 }
 
-footer {
-  flex-flow: column;
+header nav ul li {
+  font-size: 1.125em;
 }
+
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   }
 
+
 footer .contact {
-  margin-bottom: 50px;
+  margin-bottom: 50px 0;
+  text-align: center;
+  padding-top: 20px;
+
+  }
+
+  footer .social {
+    text-align: center;
+    padding: 20px 0;
   }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+ 
+
 }
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 footer p {
@@ -238,6 +247,7 @@ footer p {
 footer .copyright {
   margin: 20px 0;
 }
+
 
 /* --------- Mobile Styles - Homepage --------- */
 
@@ -249,7 +259,12 @@ footer .copyright {
   flex-flow: row wrap;
   background: url("../img/hero-area-background.png");
   background-size: cover;
-  height: 500px;
+  height: 600px;
+
+}
+
+.hero-area h1 {
+  padding-top: 30px;
 }
 
 
@@ -261,11 +276,15 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-
+  padding: 10px 0 50px 0;
 }
 
 
 /* Features */
+
+.features .content-wrapper {
+  padding: 50px 0;
+}
 
 
 .features {
@@ -274,52 +293,66 @@ aside {
   flex-flow: row wrap;
   background: url("../img/features-background.png");
   background-size: cover;
-  height: auto;
+ 
 }
 
-.features h2 {
-  margin-bottom: 60px;
-}
 
-.features .feature-items {
+.feature-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+ 
 }
 
 .features article {
   width: 60%;
-  margin: 0;
-  
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+ 
 
 }
 
 
 .features p {
-	margin: 0;
-  padding-top: 30px;
-  justify-content: center;
-  align-items: center;
-
+  text-align: center;
+  padding-top: 20px;
+  
+  
 }
 
+
+
+
+
 /* Reviews */
+
+.reviews .content-wrapper {
+  padding: 20px 0 50px 0;
+}
 
 .reviews {
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
-.reviews h2 {
-  margin-bottom: 40px;
+
+.reviews figure {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
 }
+
 
 
 /* ---------Mobile Styles - FAQ Page --------- */
@@ -593,11 +626,21 @@ margin: 0;
  @media only screen and (min-width: 1200px) {
     /*----- Desktop Styles - Home Page -----*/
 
+
 .content-wrapper{
   max-width: 960px;
 
  
 }
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url("../img/hero-area-background.png");
+  background-size: cover;
+  height: 1200px;
+
 
 .features h2 {
   width: 90%;
